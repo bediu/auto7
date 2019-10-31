@@ -57,7 +57,7 @@ const config: WebsiteConfig = {
   siteUrl: '',
   facebook: 'https://www.facebook.com/auto7.revista',
   twitter: '',
-  showSubscribe: false,
+  showSubscribe: true,
   mailchimpAction: '',
   mailchimpName: '',
   mailchimpEmailFieldName: '',

@@ -1,10 +1,12 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 
 import { colors } from '../../styles/colors';
 import config from '../../website-config';
 import SubscribeForm from './SubscribeForm';
 import SubscribeLogo from './SubscribeLogo';
+import { Link } from 'gatsby';
 
 interface SubscribeOverlayProps {
   open?: boolean;
@@ -125,7 +127,7 @@ const SubscribeOverlayContent = styled.div`
   margin: 0 0 5vw 0;
   padding: 4vw;
   color: #fff;
-  text-align: center;
+  width: 100%;
 `;
 
 const SubscribeOverlayTitle = styled.h1`
@@ -144,6 +146,40 @@ const SubscribeOverlayDescription = styled.p`
   font-weight: 300;
   opacity: 0.8;
 `;
+
+
+const NavStyles = css`
+  display: flex;
+  margin: 0 0 0 -12px;
+  padding: 0;
+  list-style: none;
+  transform: translateY(-100%);
+  
+  li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  }
+
+  li a {
+  display: block;
+  margin: 0;
+  padding: 10px 12px;
+  color: #fff;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 2.2rem;
+  }
+
+  li a:hover {
+  text-decoration: none;
+  opacity: 1;
+  }
+  @media (max-width: 650px) {
+  display: block;
+  }
+  `;
 
 interface SubscribeState {
   isOpen: boolean;
@@ -186,13 +222,27 @@ class SubscribeModal extends React.Component<any, SubscribeState> {
         <SubscribeOverlayClose onClick={this.close} />
         <SubscribeOverlayContent>
           <SubscribeLogo />
-          <SubscribeOverlayTitle>Subscribe to {config.title}</SubscribeOverlayTitle>
-          <SubscribeOverlayDescription>
-            Stay up to date! Get all the latest &amp; greatest posts delivered straight to your
-            inbox
-          </SubscribeOverlayDescription>
-          <SubscribeForm />
-        </SubscribeOverlayContent>
+
+          <ul css={NavStyles} role="menu">
+          {/* TODO: mark current nav item - add class nav-current */}
+          <li role="menuitem">
+            <Link to="/">Te Fundit</Link>
+          </li>
+          <li role="menuitem">
+            <Link to="/about">Revizione</Link>
+          </li>
+          <li role="menuitem">
+            <Link to="/about">Riparime</Link>
+          </li>
+          <li role="menuitem">
+            <Link to="/about">Automobila Elektronik</Link>
+          </li>
+          <li role="menuitem">
+            <Link to="/tags/getting-started/">Video</Link>
+          </li>
+        </ul>
+
+          </SubscribeOverlayContent>
       </SubscribeOverlay>
     );
   }

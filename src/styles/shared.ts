@@ -40,7 +40,8 @@ export const SiteDescription = styled.h2`
   letter-spacing: 0.5px;
   opacity: 0.8;
   @media (max-width: 650px) {
-    display: none;
+    display: none !important;
+    text-align: left !important;
   }
 `;
 
