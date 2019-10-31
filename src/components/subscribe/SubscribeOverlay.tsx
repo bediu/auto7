@@ -153,7 +153,6 @@ const NavStyles = css`
   margin: 0 0 0 -12px;
   padding: 0;
   list-style: none;
-  transform: translateY(-100%);
   
   li {
   display: block;
