@@ -26,6 +26,9 @@ export const SiteTitle = styled.h1`
   padding: 0;
   font-size: 3.8rem;
   font-weight: 700;
+  @media (max-width: 650px) {
+    text-align: left;
+  }
 `;
 
 export const SiteDescription = styled.h2`
@@ -33,9 +36,12 @@ export const SiteDescription = styled.h2`
   margin: 0;
   padding: 5px 0;
   font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.5px;
   opacity: 0.8;
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 
 export const PostFeed = css`
@@ -91,6 +97,13 @@ export const SiteHeaderContent = styled.div`
   min-height: 200px;
   max-height: 450px;
   text-align: center;
+  @media (max-width: 650px) {
+    max-height: unset;
+    min-height: unset;
+    display: block;
+    padding-bottom: 0px;
+    padding-top: 30px;
+  }
 `;
 
 export const SiteHeaderStyles = css`

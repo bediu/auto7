@@ -148,7 +148,7 @@ const IndexPage: React.FC<IndexProps> = props => {
                   config.title
                 )}
               </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
+              <SiteDescription class="hp-desc">{config.description}</SiteDescription>
             </SiteHeaderContent>
             <SiteNav isHome />
           </div>
@@ -180,7 +180,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+    logo: file(relativePath: { eq: "img/auto7-logo.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

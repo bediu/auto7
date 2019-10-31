@@ -27,6 +27,10 @@ const SiteNavStyles = css`
   overflow-y: hidden;
   height: 40px;
   font-size: 1.2rem;
+  @media (max-width: 650px) {
+    display: block;
+    height: unset;
+  }
 `;
 
 const SiteNavLeft = styled.div`
@@ -45,6 +49,10 @@ const SiteNavLeft = styled.div`
   @media (max-width: 700px) {
     margin-right: 0;
     padding-left: 4vw;
+  }
+  @media (max-width: 650px) {
+    padding-top: 25px;
+    padding-bottom: 10px;
   }
 `;
 
@@ -66,12 +74,16 @@ const NavStyles = css`
     margin: 0;
     padding: 10px 12px;
     color: #fff;
-    opacity: 0.8;
+    opacity: 1;
+    font-weight: 500;
   }
 
   li a:hover {
     text-decoration: none;
     opacity: 1;
+  }
+  @media (max-width: 650px) {
+    display: block;
   }
 `;
 
@@ -134,13 +146,19 @@ class SiteNav extends React.Component<SiteNavProps> {
           <ul css={NavStyles} role="menu">
             {/* TODO: mark current nav item - add class nav-current */}
             <li role="menuitem">
-              <Link to="/">Home</Link>
+              <Link to="/">Te Fundit</Link>
             </li>
             <li role="menuitem">
-              <Link to="/about">About</Link>
+              <Link to="/about">Revizione</Link>
             </li>
             <li role="menuitem">
-              <Link to="/tags/getting-started/">Getting Started</Link>
+              <Link to="/about">Riparime</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/about">Automobila Elektronik</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/tags/getting-started/">Video</Link>
             </li>
           </ul>
         </SiteNavLeft>
