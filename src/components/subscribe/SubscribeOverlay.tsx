@@ -225,19 +225,16 @@ class SubscribeModal extends React.Component<any, SubscribeState> {
           <ul css={NavStyles} role="menu">
           {/* TODO: mark current nav item - add class nav-current */}
           <li role="menuitem">
-            <Link to="/">Te Fundit</Link>
+            <Link to="/tags/lajme">Lajme</Link>
           </li>
           <li role="menuitem">
-            <Link to="/about">Revizione</Link>
+            <Link to="/tags/revizione">Revizione</Link>
           </li>
           <li role="menuitem">
-            <Link to="/about">Riparime</Link>
+            <Link to="/tags/riparime">Riparime</Link>
           </li>
           <li role="menuitem">
-            <Link to="/about">Automobila Elektronik</Link>
-          </li>
-          <li role="menuitem">
-            <Link to="/tags/getting-started/">Video</Link>
+            <Link to="/tags/video">Video</Link>
           </li>
         </ul>
 

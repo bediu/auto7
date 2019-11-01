@@ -38,6 +38,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         name: 'primaryTag',
         value: primaryTag || '',
       });
+
+      createNodeField({
+        node,
+        name: 'draft',
+        value: draft || false,
+      });
+      
     }
   }
 };

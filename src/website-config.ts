@@ -50,9 +50,9 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'AUTO7',
-  description: 'Ne Hap Me Boten e Automobilave',
-  coverImage: 'img/blog-cover.jpg',
-  logo: 'img/auto7-logo.svg',
+  description: 'Në Hap Me Botën e Automobilave',
+  coverImage: 'covers/blog-cover.jpg',
+  logo: 'logo/auto7-logo.png',
   lang: 'en',
   siteUrl: '',
   facebook: 'https://www.facebook.com/auto7.revista',

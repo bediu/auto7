@@ -296,9 +296,6 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
               )}
               <PostContent htmlAst={post.htmlAst} />
 
-              {/* The big email subscribe modal content */}
-              {config.showSubscribe && <Subscribe title={config.title} />}
-
               <PostFullFooter>
                 <AuthorCard author={post.frontmatter.author} />
                 <PostFullFooterRight authorId={post.frontmatter.author.id} />
@@ -330,7 +327,7 @@ export default PageTemplate;
 
 export const query = graphql`
   query($slug: String, $primaryTag: String) {
-    logo: file(relativePath: { eq: "img/auto7-logo.png" }) {
+    logo: file(relativePath: { eq: "logo/auto7-logo.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed

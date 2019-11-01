@@ -1,15 +1,8 @@
-- id: Ghost
-  avatar: avatars/ghost.png
-  bio: The professional publishing platform
-  twitter: TryGhost
-  facebook: ghost
-  website: https://ghost.org/
+- id: Auto7
+  avatar: avatars/auto7.png
+  facebook: https://facebook.com/auto7.revista
+  website: https://auto7.online/
   location: On a plane
-- id: Another Author
-  avatar: avatars/ghost.png
-  bio: This is another test author with a profile background image
-  twitter: TryGhost
-  facebook: ghost
-  website: https://ghost.org/
-  location: On a plane
-  profile_image: img/alex-knight-326705-unsplash.jpg
+  bio: false
+  twitter: false
+  profile_image: avatars/auto7.png

@@ -1,3 +1,13 @@
-- id: speeches
-  description: Some of the greatest words ever spoken.
-  image: img/speeches-cover.jpg
+- id: Lajme
+  description: Lajme të Fundit në Botën e Automobilave
+  image: covers/lajme.jpg
+- id: Revizione
+  description: Vlerësime dhe Revizione të Automobilave
+  image: covers/revizione.jpg
+- id: Riparime
+  description: Udhëheqje Rreth Riparimeve të Ndryshme
+  image: covers/riparime.jpg
+- id: Video
+  description: Video Interesante, Informative dhe Qesharake
+  image: covers/video.jpg
+  

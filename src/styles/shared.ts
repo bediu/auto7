@@ -38,7 +38,7 @@ export const SiteDescription = styled.h2`
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: 0.5px;
-  opacity: 0.8;
+  opacity: 1;
   @media (max-width: 650px) {
     display: none !important;
     text-align: left !important;
