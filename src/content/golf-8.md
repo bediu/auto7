@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wolkswagen Shfaq Modelin e Ri Golf 8
+title: Volkswagen Shfaq Modelin e Ri Golf 8
 image: img/golf8-front.jpg
 author: Auto7
 date: 2019-11-01T07
