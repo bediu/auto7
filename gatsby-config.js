@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-casper.netlify.com',
+        siteUrl: 'https://auto7.online',
       },
     },
     'gatsby-plugin-emotion',
