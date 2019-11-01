@@ -42,9 +42,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({
         node,
         name: 'draft',
-        value: draft || false,
+        value: false,
       });
-      
+
     }
   }
 };
