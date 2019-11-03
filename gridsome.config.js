@@ -12,7 +12,7 @@ module.exports = {
 				feedOptions: {
 					title: 'AUTO7 RSS',
 					feed_url: 'https://auto7.online/feed.xml',
-					site_url: 'https://superblog.com'
+					site_url: 'https://auto7.online'
 				},
 				feedItemOptions: node => ({
 					title: node.title,
