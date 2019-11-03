@@ -1,6 +1,6 @@
 ---
 title: Lexus me Konceptin e Tyre Befasues LF-30
-date: 2019-11-01T17:51:51.367Z
+date: 2019-11-03T17:00:00.367Z
 image: /img/lexus-sides.jpg
 author: ['auto7']
 slug: lexus-me-konceptin-e-tyre-Befasues-lf-30
