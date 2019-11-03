@@ -13,7 +13,7 @@
         <article :class="postClass">
           <header class="post-full-header">
             <section class="post-full-meta">
-              <time class="post-full-meta-date" :datetime="$page.post.date | moment('d, MMMM YYYY')">{{ $page.post.date | moment("d, MMMM YYYY") }}</time>
+              <time class="post-full-meta-date" :datetime="$page.post.date | moment('DD, MMMM YYYY')">{{ $page.post.date | moment("DD, MMMM YYYY") }}</time>
               <span class="date-divider">/</span>
               <a v-for="tag in $page.post.tags" :key="tag.title"
               :href="'/tag/' + tag.title">

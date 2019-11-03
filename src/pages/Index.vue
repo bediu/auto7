@@ -19,7 +19,14 @@
     <main id="site-main" class="site-main outer">
       <div class="inner">
         <div class="post-feed">
-          <Card v-for="{ node } in $page.allPost.edges" :key="node.id" :cardData="node" />
+          <Card v-for="{ node } in 
+          $page.allPost.edges
+                
+                .sort(function (a,b) { 
+                  return new Date(b.node.date) - new Date(a.node.date)
+                })"
+
+            :key="node.id" :cardData="node" />
         </div>
       </div>
     </main>
@@ -38,7 +45,8 @@
       }
     },
     components: {
-      Navbar, Card
+      Navbar,
+      Card
     },
     computed: {
       Admin() {
@@ -57,32 +65,36 @@
         } else {
           return 'site-header outer no-cover'
         }
+      },
+      sortedPosts() {
+
       }
-    }   
+    }
   }
 </script>
 
 <page-query>
   query Home ($page: Int) {
-    allPost (page: $page, order: ASC) {
-      edges {
-        node {
-          id
-          title
-          path
-          tags {
-            title
-          }
-          image
-          content
-          author {
-            id
-            name
-            image
-          }
-          timeToRead
-        }
-      }
-    }
+  allPost (page: $page, order: ASC) {
+  edges {
+  node {
+  id
+  title
+  path
+  date
+  tags {
+  title
+  }
+  image
+  content
+  author {
+  id
+  name
+  image
+  }
+  timeToRead
+  }
+  }
+  }
   }
 </page-query>
