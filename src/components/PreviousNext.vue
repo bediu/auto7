@@ -84,16 +84,18 @@ export default {
   methods: {
     getPreviousNext() {
       const allBlogs = this.$static.allPost.edges;
-      for (let i = 0; i < allBlogs.length; i++) {
+
+    for (let i = 0; i < allBlogs.length; i++) {
         if (allBlogs[i].node.id === this.currentPostId) {
           if (i > 0) {
             this.PreviousNexts.push(allBlogs[i - 1].node);
           }
-          if (allBlogs.length > i) {
+          if (allBlogs.length -1 > i) {
             this.PreviousNexts.push(allBlogs[i + 1].node);
           }
         }
       }
+
     }
   }
 };

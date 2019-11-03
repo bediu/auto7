@@ -20,13 +20,7 @@
       <div class="inner">
         <div class="post-feed">
           <Card v-for="{ node } in 
-          $page.allPost.edges
-                
-                .sort(function (a,b) { 
-                  return new Date(b.node.date) - new Date(a.node.date)
-                })"
-
-            :key="node.id" :cardData="node" />
+          this.sortedPosts" :key="node.id" :cardData="node" />
         </div>
       </div>
     </main>
@@ -66,8 +60,10 @@
           return 'site-header outer no-cover'
         }
       },
-      sortedPosts() {
-
+       sortedPosts() {
+        return this.$page.allPost.edges.sort(function (a, b) {
+          return new Date(b.node.date) - new Date(a.node.date)
+        });
       }
     }
   }
