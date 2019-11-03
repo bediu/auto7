@@ -1,6 +1,6 @@
 ---
 title: Volkswagen Shfaq Modelin e ri Golf 8
-date: 2019-11-01T17:51:51.367Z
+date: 2019-11-01T17:00:00.367Z
 image: /img/golf8-front.jpg
 author: ['auto7']
 slug: golf-8
