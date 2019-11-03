@@ -1,0 +1,20 @@
+site:
+  title: Auto7
+  cover_image: '/covers/blog-cover.jpg'
+  logo: '/logo/auto7-logo.png'
+  url: '/'
+  description: 'Në Hap Me Botën e Automobilave'
+  subscribers: false
+  navigation: true
+
+social_media:
+  facebook: 'auto7.revista'
+  twitter: false
+  patreon: false
+
+nav_home:
+  - title: Lajme
+    link: /
+  - title: Video
+    link: /video
+  
