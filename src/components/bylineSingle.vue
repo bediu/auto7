@@ -13,11 +13,11 @@
           </a>
         </h4>
         <p v-if="authorData.tagline">{{ authorData.tagline }}</p>
-        <p v-else>Read <a :href="'/author/' + authorData.id">more posts</a> by this author.</p>  
+        <p v-else><a :href="'/author/' + authorData.id">Lexo më shumë</a></p>  
       </section>
     </section>
     <div class="post-full-footer-right">
-      <a class="author-card-button" :href="'/author/' + authorData.id">Read More</a>
+      <a class="author-card-button" :href="'/author/' + authorData.id">Lexo më shumë</a>
     </div>
   </footer>
 </template>

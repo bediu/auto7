@@ -16,15 +16,15 @@ Ky model ka shumë ndryshime në krahasim me modelin më të mëparshëm Golf 7.
 
 Përmirësimet në kapacitetin e baterisë nuk janë të vetmët ndryshime që ky model i Golf-it sjell. Brendësia e automobilit (interior-i) do të jet i gjithë i digjitalizuar si dhe konsumatorët mundë ta perdorin Alexa si asistente për kontrollimin e aparaturave të automobilit si për shembull radion.
 
-![Test Image](/img/golf8-interior.jpg)
+![golf8 interior](/img/golf8-interior.jpg)
 
 ---
 
 Volksvagen thotë se modeli <mark>GTI</mark> dhe <mark>GTD</mark> do të jenë të gatshëm vitin e ardhshëm, kurse modeli <mark>Hot R</mark> do të arrijë në vitin 2021.
 
 ---
-![Test Image](/img/golf8-top.jpg)
+![golf8 top](/img/golf8-top.jpg)
 
 ---
-![Test Image](/img/golf8-back.jpg)
+![golf8 back](/img/golf8-back.jpg)
 
