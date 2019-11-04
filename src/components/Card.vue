@@ -51,8 +51,6 @@ export default {
       if (this.cardData.fields === null) {
         classes.push("no-image");
       }
-      const cardTagClass = "post-" + this.cardData.tags[0].title;
-      classes.push(cardTagClass);
       return classes;
     }
   },
