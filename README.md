@@ -1,6 +1,6 @@
 ![Gridsome starter casper preview](https://i.imgur.com/TmJcF77.png?1)
 
-#auto7
+# auto7
 * Sample car blog using a customized casper theme built with gridsome
 * Runs on netlify
 
